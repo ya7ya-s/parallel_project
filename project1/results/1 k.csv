@@ -1,0 +1,5 @@
+threads,average_time_microseconds
+1,140
+2,124
+4,202
+8,505
