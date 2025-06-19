@@ -8,7 +8,10 @@ Openmp:
 
 Using Openmp the binary search algorithm parallelized by dividing the array into chunks, one for each thread. Each thread performs a binary search independently on its chunk
 
+
+
 Key Details:
+
 	Work Division: The array is split into chunks   chunkSize = SIZE / thread_count.
 
 	Each thread searches its chunk  using binarySearch (start, end).
@@ -20,22 +23,32 @@ Key Details:
 	Threads check the result to stop early if another has found it .
 
 
+
+
 2-	Instructions on how to compile and run your OpenMP code:
 
 Compiling and running on linux/GCC
+
 g++ -fopenmp binary_search_omp.cpp -o binary_search_omp
 
 run:
+
 ./binary_search_omp
 
 
 
 3-	Performance results:
+
 Input size: 10M
+
 Threads count	openmp	sequantial
+
 1	             5.8 µS 	3 µS
+
 2	             33.2 µS	3 µS
+
 4	            108.4 µS	3 µS
+
 8           	189.2 µS	3 µS
  
 Input size: 0.5M
