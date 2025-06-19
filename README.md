@@ -71,6 +71,14 @@ Conclusion:
 In conclusion, Binary search is not a good candidate for parallelization in practice because it’s already efficient and the added threading overhead reduces performance instead of improving it.
 	
 
+Tools used in the project:
+•	GCC
+•	VScode
+•	Gihub
+•	Python
+•	Excel 
+•	chatGPT
+•	VBox
 
 
      
