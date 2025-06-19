@@ -10,9 +10,13 @@ Using Openmp the binary search algorithm parallelized by dividing the array into
 
 Key Details:
 	Work Division: The array is split into chunks   chunkSize = SIZE / thread_count.
+
 	Each thread searches its chunk  using binarySearch (start, end).
+
 	When a thread finds the target, it sets the shared result index (resultIndex).
+
 	The critical section prevents race conditions when updating the result.
+
 	Threads check the result to stop early if another has found it .
 
 
